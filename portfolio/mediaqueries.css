@@ -1,0 +1,96 @@
+@media screen and (max-width:1400px) {
+    #profile{
+        height: 83vh;
+        margin-bottom: 6rem;
+
+    }
+    .about-containers,.about-containers-2{
+        flex-wrap:wrap ;
+    }
+    
+    
+}
+
+
+@media screen and (max-width:1200px) {
+    #desktop-nav{
+        display: none;/*when screen lower 1200 it disappears*/
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    #experience, .experience-details-container{
+        margin-top: 2rem;
+    }
+
+    #profile,.section-container{
+        display: block;
+    }
+    .arrow{
+        display: none;
+    }
+    section, .section-container{
+        height:fit-content;
+    }
+    section{
+        margin: 0 5%;
+    }
+    .section__pic-container{
+        width: 275px;
+        height:275px;
+        margin: 0rem auto 2rem;
+    }
+    .about-containers, .about-containers-2{
+        margin-top: 0;
+    }
+
+    .about-pic{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    #profile {
+        height: 80vh; /* Adjust the height as needed */
+        margin-bottom: 2rem;
+    }
+
+    .section__pic__container {/*my pic*/
+        width: 150px;
+    height: 150px;
+    }
+
+
+    .about-pic{
+        display: none;
+    }
+    
+    #about {
+        height: 90vh; /* Adjust the height as needed */
+        margin-bottom: 2rem;
+    }
+    #profile, #about {
+        height: auto; /* Allow sections to adjust their height based on content */
+        margin-bottom: 1rem;
+    }
+  
+
+    .section__text {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 2rem; /* Adjust the font size as needed */
+    }
+
+    .section__text__p2 {
+        font-size: 1rem; /* Adjust the font size as needed */
+    }
+
+  
+    .btn-container button {
+        margin-bottom: 1rem;
+    }
+    .about-details-container {
+        flex-direction: column;
+    }
+}
