@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,287 +11,561 @@
     <!-- Favicon -->
     <link rel="icon" href="assets/favicon.png" type="image/png">
 
+
 </head>
 
 <body>
-    <!--navbar:)-->
-    <nav id='desktop-nav'>
-        <div class="logo">Rayen Ben Amor</div>
 
-        <ul class="nav-links">
-            <!--the link takes you to sections with # id, not a url-->
-            <li> <a href="#about">About</a> </li>
-            <li> <a href="#experience">Experience</a> </li>
-            <li> <a href="#projects">Projects</a> </li>
-            <li> <a href="#contact">Contact</a> </li>
-        </ul>
-
-    </nav>
-
-    <!--menu-->
-    <nav id='hamburger-nav'>
-        <div class="logo">Rayen Ben Amor</div><!--will appear when minimized-->
-
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <!--three spans for the 3 lines in menu-->
-                <span></span>
-                <span></span>
-                <span></span>
-
-            </div>
-
-            <div class="menu-links">
-
-                <li> <a href="#about" onclick="toggleMenu()">About</a> </li>
-                <li> <a href="#experience" onclick="toggleMenu()">Experience</a> </li>
-                <li> <a href="#projects" onclick="toggleMenu()">Project</a> </li>
-                <li> <a href="#contact" onclick="toggleMenu()">Contact</a> </li>
-            </div>
-
-        </div>
-
-    </nav>
-    <!--profile section-->
-    <section id="profile">
-        <div class="section__pic__container">
-            <img src="./assets/profile-pic.png" alt="rayen pic" draggable="false">
-        </div>
-
-        <div class="section__text">
-            <p class="section__text__p1">Hello I'm</p>
-            <h1 class="title">Rayen Ben Amor</h1>
-            <p class="section__text__p2">Junior Developer</p>
-
-            <div class="btn-container">
-                <button class="profile_btn" onclick="window.open('./assets/CV_Benamor_Rayen.pdf')">View CV</button>
-                <!--both buttons styled the same-->
-                <button class="profile_btn" onclick="location.href='./#contact'">Contact info</button>
-            </div>
-
-            <div id="socials-container">
-                <img src="assets/linkedin.png" alt="my linkedin profile" class="social_icon"
-                    onclick="window.open('https://www.linkedin.com/in/rayen-ben-amor-7775292a6/', '_blank')">
-
-                <img src="assets/github.png" alt="my github profile" class="social_icon"
-                    onclick="window.open('https://github.com/rynBenAmor', '_blank')">
-            </div>
-
-        </div>
-
-    </section>
-
-    <!--about section-->
-    <section id="about">
-        <img src="./assets/arrow1.png" alt="arrow icon" class="arrow" onclick="location.href='./#about'" />
-        <p class="section__text__p1"> Additional information :</p>
-
-        <h1 class="title">About Me</h1>
-
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/fac.jpg" class="about-pic" alt="My Faculty Image" draggable="false" />
-            </div>
-
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <div class="icon-container">
-                            <img src="./assets/experience1.png" alt="experience icon" class="icon">
-                        </div>
-                        <div class="education">
-                            <h3>Education:</h3>
-                            <p class="text-container">
-                                My name is Rayen Ben Amor,<br /> and I am currently in my third year at
-                                <strong>FST</strong> (Faculté des Sciences Tunis El Manar). I will be graduating this
-                                year with my licence in <strong>TIC</strong> (Information and communication technology)
-                                as a senior technician. <br />And am enthusiastic about improving my skills. I am
-                                optimistic about learning and exploring new opportunities in the field.
-                            </p>
-                            <style>
-                                .troll {
-                                    color: #f4eaef;
-                                    cursor: default;
-                                }
-                            </style>
-                            <p class="troll">I have them candy colored eyes as my main skill(Green)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow1.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-    </section>
-
-    <!--EXPERIENCE SECTION-->
-    <section id="experience">
-
-        <p class="section__text__p1"> Additional information :</p>
-        <h1 class="title">Experiences and aquired skills</h1>
-
-        <div class="experience-details-container">
-            <!--reusing some previous classes-->
-            <!--details-container+about-containers work fine but i won't change it for safety-->
-            <div class="about-containers-2"><!--abou-containers seperates the two subjects nxt to eachother -->
-                <!--frontend container-->
-                <div class="details-container-2">
-                    <h2 class="experience-sub-title">- Frontend Technologies :</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/html.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>HTML</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/css.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>CSS</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/javascript.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Javascript</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/angular.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Angular</h3>
-                            </div>
-                        </article>
-
-
-                    </div>
-                </div>
-
-                <!--backend container-->
-                <div class="details-container-2">
-                    <h2 class="experience-sub-title">- Backened Technologies :</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/django.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Django</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/sql.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>SQL</h3>
-                            </div>
-                            <p>(postgres/mysql)</p>
-                        </article>
-                        <article>
-                            <img src="./assets/spring_boot.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Spring Boot</h3>
-                            </div>
-
-                        </article>
-                        <article>
-                            <img src="./assets/php.png" alt="experience icon" class="icon" draggable="false" />
-                            <div>
-                                <h3>PHP</h3>
-                            </div>
-
-                        </article>
-
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-        <img src="./assets/arrow1.png" alt="arrow icon" class="arrow" onclick="location.href='./#projects'" />
-    </section>
-
-
-    <!--projects section-->
-    <section id="projects">
-        <p class="section__text__p1"> Additional information :</p>
-        <h1 class="title">Recent projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers-2">
-                <div class="details-container-2 color-container">
-                    <div class="article-container">
-                        <img src="./assets/moncef bay.png" alt="project1" class="project1-img">
-                        <div>
-
-                            <h2 class="experience-sub-title">Moncef Bay</h2>
-                            <p> <strong>Description</strong><br/>Moncef Bay is an e-commerce online shop crafted with Django. This fully-fledged platform offers a simple shopping experiences , also ensures  security through Django's comprehensive authentication systems , also offers CRUD (Create, Read, Update, Delete) capabilities. Built entirely with Django, therefore it operates as a Server-Side Rendered (SSR) application, delivering dynamic and efficient web performance for users.</p>
-                            <div class="btn-container">
-                                <button class="profile_btn" onclick="window.open('https://ryanbenamor.pythonanywhere.com/', '_blank')">View website</button>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                    <!--second project-->
-                <div class="details-container-2 color-container">
-                    <div class="article-container">
-                       
-                        <div>
-                            <img src="./assets/project2.png" alt="project1" class="project2-img">
-                            <h2 class="experience-sub-title">IOT Project </h2>
-                            <p> <strong>Description</strong><br/> Real-Time IoT Monitoring Project with ESP8266 is a smart solution utilizing Arduino Uno and DHT to measure temperature and humidity. The ESP8266 ensures connectivity to a web server via WebSocket, enabling real-time transmission of measured data. This implementation showcases advanced skills in embedded systems programming, web server configuration with ESP8266WebServer, and efficient communication via WebSocket. Using an HTML page, the data is visualized and analyzed, providing a comprehensive and innovative IoT monitoring solution.</p>
-                            
-                            <div class="btn-container">
-                                
-                                <img src="assets/github.png" alt="my github profile" class="social_icon"
-                                onclick="window.open('https://github.com/rynBenAmor/capture', '_blank')">
-                                
-                            </div>
-                            
-                        </div>             
-
-                    </div>
-                </div>
-        
-            </div>
-        </div>
-    
+    <div id="english-content">
+        <select id="language-select" onchange="switchLanguage(this.value)">
+            <option value="en"><img src="./assets/english.png" alt="English" class="language-icon">English</option>
+            <option value="fr"><img src="./assets/French.png" alt="Français" class="language-icon">Français</option>
+        </select>
         
 
-        <img src="./assets/arrow1.png" alt="arrow icon" class="arrow" onclick="location.href='./#contact'" />
-    </section>
+        <!--english body -->
+            <!--navbar:)-->
+            <nav id='desktop-nav'>
+                <div class="logo">Rayen Ben Amor</div>
 
+                <ul class="nav-links">
+                    <!--the link takes you to sections with # id, not a url-->
+                    <li> <a href="#about">About</a> </li>
+                    <li> <a href="#experience">Experience</a> </li>
+                    <li> <a href="#projects">Projects</a> </li>
+                    <li> <a href="#contact">Contact</a> </li>
+                </ul>
 
-    <!-- contact section-->
-    <section id="contact">
-        <p class="section__text__p1"> Additional information :</p>
-        <h1 class="title">Contact me at!</h1>
-
-        <div class="contact-info-upper-container">
-
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="email icon" class="icon contact-icon" draggable="false">
-                <H2 class="mail"><a href="mailto:ray3n.b3n.amor@gmail.com">ray3n.b3n.amor@gmail.com</a></H2>
-                
-            </div>
-            <p class="goodbye">can't wait to meet you </p>
-        </div>
-
-        <!--feet
-        <footer>
-            <nav>
-                <div class="nav-links-container">
-                    <ul class="nav-links">
-                       
-                        <li> <a href="#about">About</a> </li>
-                        <li> <a href="#experience">Experience</a> </li>
-                        <li> <a href="#projects">Projects</a> </li>
-                        <li> <a href="#contact">Contact</a> </li>
-                    </ul>
-                </div>
             </nav>
-        </footer>-->
 
-    </section>
+            <!--menu-->
+            <nav id='hamburger-nav'>
+                <div class="logo">Rayen Ben Amor</div>
+                <!--will appear when minimized-->
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <!--three spans for the 3 lines in menu-->
+                        <span></span>
+                        <span></span>
+                        <span></span>
 
+                    </div>
+
+                    <div class="menu-links">
+
+                        <li> <a href="#about" onclick="toggleMenu()">About</a> </li>
+                        <li> <a href="#experience" onclick="toggleMenu()">Experience</a> </li>
+                        <li> <a href="#projects" onclick="toggleMenu()">Project</a> </li>
+                        <li> <a href="#contact" onclick="toggleMenu()">Contact</a> </li>
+                    </div>
+
+                </div>
+
+            </nav>
+            <!--profile section-->
+            <section id="profile">
+                <div class="section__pic__container">
+                    <img src="./assets/profile-pic.png" alt="rayen pic" draggable="false">
+                </div>
+
+                <div class="section__text">
+                    <p class="section__text__p1">Hello I'm</p>
+                    <h1 class="title">Rayen Ben Amor</h1>
+                    <p class="section__text__p2">Junior Developer</p>
+
+                    <div class="btn-container">
+                        <button class="profile_btn" onclick="window.open('./assets/CV_Benamor_Rayen.pdf')">View CV</button>
+                        <!--both buttons styled the same-->
+                        <button class="profile_btn" onclick="location.href='./#contact'">Contact info</button>
+                    </div>
+
+                    <div id="socials-container">
+                        <img src="assets/linkedin.png" alt="my linkedin profile" class="social_icon"
+                            onclick="window.open('https://www.linkedin.com/in/rayen-ben-amor-7775292a6/', '_blank')">
+
+                        <img src="assets/github.png" alt="my github profile" class="social_icon"
+                            onclick="window.open('https://github.com/rynBenAmor', '_blank')">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!--about section-->
+            <section id="about">
+                <img src="./assets/arrow1.png" alt="arrow icon" class="arrow" onclick="location.href='./#about'" />
+                <p class="section__text__p1"> Additional information :</p>
+
+                <h1 class="title">About Me</h1>
+
+                <div class="section-container">
+                    <div class="section__pic-container">
+                        <img src="./assets/fac.jpg" class="about-pic" alt="My Faculty Image" draggable="false" />
+                    </div>
+
+                    <div class="about-details-container">
+                        <div class="about-containers">
+                            <div class="details-container">
+                                <div class="icon-container">
+                                    <img src="./assets/experience1.png" alt="experience icon" class="icon">
+                                </div>
+                                <div class="education">
+                                    <h3>Education:</h3>
+                                    <p class="text-container">
+                                        My name is Rayen Ben Amor,<br /> and I am currently in my third year at
+                                        <strong>FST</strong> (Faculté des Sciences Tunis El Manar). I will be graduating this
+                                        year with my licence in <strong>TIC</strong> (Information and communication technology)
+                                        as a senior technician. <br />And am enthusiastic about improving my skills. I am
+                                        optimistic about learning and exploring new opportunities in the field.
+                                    </p>
+                                    <!--<style>
+                                        .troll {
+                                            color: #f4eaef;
+                                            cursor: default;
+                                        }
+                                    </style>
+                                    <p class="troll">I have them candy colored eyes as my main skill(Green)</p>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/arrow1.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+            </section>
+
+            <!--EXPERIENCE SECTION-->
+            <section id="experience">
+
+                <p class="section__text__p1"> Additional information :</p>
+                <h1 class="title">Experiences and aquired skills</h1>
+
+                <div class="experience-details-container">
+                    <!--reusing some previous classes-->
+                    <!--details-container+about-containers work fine but i won't change it for safety-->
+                    <div class="about-containers-2"><!--abou-containers seperates the two subjects nxt to eachother -->
+                        <!--frontend container-->
+                        <div class="details-container-2">
+                            <h2 class="experience-sub-title">- Frontend Technologies :</h2>
+                            <div class="article-container">
+                                <article>
+                                    <img src="./assets/html.png" alt="experience icon" class="icon" />
+                                    <div>
+                                        <h3>HTML</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="./assets/css.png" alt="experience icon" class="icon" />
+                                    <div>
+                                        <h3>CSS</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="./assets/javascript.png" alt="experience icon" class="icon" />
+                                    <div>
+                                        <h3>Javascript</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="./assets/angular.png" alt="experience icon" class="icon" />
+                                    <div>
+                                        <h3>Angular</h3>
+                                    </div>
+                                </article>
+
+
+                            </div>
+                        </div>
+
+                        <!--backend container-->
+                        <div class="details-container-2">
+                            <h2 class="experience-sub-title">- Backened Technologies :</h2>
+                            <div class="article-container">
+                                <article>
+                                    <img src="./assets/django.png" alt="experience icon" class="icon" />
+                                    <div>
+                                        <h3>Django</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="./assets/sql.png" alt="experience icon" class="icon" />
+                                    <div>
+                                        <h3>SQL</h3>
+                                    </div>
+                                    <p>(postgres/mysql)</p>
+                                </article>
+                                <article>
+                                    <img src="./assets/spring_boot.png" alt="experience icon" class="icon" />
+                                    <div>
+                                        <h3>Spring Boot</h3>
+                                    </div>
+
+                                </article>
+                                <article>
+                                    <img src="./assets/php.png" alt="experience icon" class="icon" draggable="false" />
+                                    <div>
+                                        <h3>PHP</h3>
+                                    </div>
+
+                                </article>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <img src="./assets/arrow1.png" alt="arrow icon" class="arrow" onclick="location.href='./#projects'" />
+            </section>
+
+
+            <!--projects section-->
+            <section id="projects">
+                <p class="section__text__p1"> Additional information :</p>
+                <h1 class="title">Recent projects</h1>
+                <div class="experience-details-container">
+                    <div class="about-containers-2">
+                        <div class="details-container-2 color-container">
+                            <div class="article-container">
+                                <img src="./assets/moncef bay.png" alt="project1" class="project1-img">
+                                <div>
+
+                                    <h2 class="experience-sub-title">Moncef Bay</h2>
+                                    <p> <strong>Description</strong><br/>Moncef Bay is an e-commerce online shop crafted with Django. This fully-fledged platform offers a simple shopping experiences , also ensures  security through Django's comprehensive authentication systems , also offers CRUD (Create, Read, Update, Delete) capabilities. Built entirely with Django, therefore it operates as a Server-Side Rendered (SSR) application, delivering dynamic and efficient web performance for users.</p>
+                                    <div class="btn-container">
+                                        <button class="profile_btn" onclick="window.open('https://ryanbenamor.pythonanywhere.com/', '_blank')">View website</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                            <!--second project-->
+                        <div class="details-container-2 color-container">
+                            <div class="article-container">
+                            
+                                <div>
+                                    <img src="./assets/project2.png" alt="project1" class="project2-img">
+                                    <h2 class="experience-sub-title">IOT Project </h2>
+                                    <p> <strong>Description</strong><br/> Real-Time IoT Monitoring Project with ESP8266 is a smart solution utilizing Arduino Uno and DHT to measure temperature and humidity. The ESP8266 ensures connectivity to a web server via WebSocket, enabling real-time transmission of measured data. This implementation showcases advanced skills in embedded systems programming, web server configuration with ESP8266WebServer, and efficient communication via WebSocket. Using an HTML page, the data is visualized and analyzed, providing a comprehensive and innovative IoT monitoring solution.</p>
+                                    
+                                    <div class="btn-container">
+                                        
+                                        <img src="assets/github.png" alt="my github profile" class="social_icon"
+                                        onclick="window.open('https://github.com/rynBenAmor/capture', '_blank')">
+                                        
+                                    </div>
+                                    
+                                </div>             
+
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+            
+                
+
+                <img src="./assets/arrow1.png" alt="arrow icon" class="arrow" onclick="location.href='./#contact'" />
+            </section>
+
+
+            <!-- contact section-->
+            <section id="contact">
+                <p class="section__text__p1"> Additional information :</p>
+                <h1 class="title">Contact me at!</h1>
+
+                <div class="contact-info-upper-container">
+
+                    <div class="contact-info-container">
+                        <img src="./assets/email.png" alt="email icon" class="icon contact-icon" draggable="false">
+                        <H2 class="mail"><a href="mailto:ray3n.b3n.amor@gmail.com">ray3n.b3n.amor@gmail.com</a></H2>
+                        
+                    </div>
+                    <p class="goodbye">can't wait to meet you </p>
+                </div>
+
+            
+
+            </section>
+
+            
+
+    </div>
+
+
+    <!-- -----------French Content ------------>
+    <div id="french-content" style="display: none;">
+        
+        <select id="language-select" onchange="switchLanguage(this.value)">
+            <option value="en"><img src="./assets/english.png" alt="English" class="language-icon">English</option>
+            <option value="fr"><img src="./assets/French.png" alt="Français" class="language-icon">Français</option>
+        </select>
+        
+
+        <!--navbar:)-->
+        <nav id='desktop-nav'>
+            <div class="logo">Rayen Ben Amor</div>
+
+            <ul class="nav-links">
+                <!--the link takes you to sections with # id, not a url-->
+                <li> <a href="#about">À propos</a> </li>
+                <li> <a href="#experience">Expérience</a> </li>
+                <li> <a href="#projects">Projets</a> </li>
+                <li> <a href="#contact">Contact</a> </li>
+            </ul>
+            
+        </nav>
+
+         <!--menu
+        <nav id='hamburger-nav'>
+            <div class="logo">Rayen Ben Amor</div>
+
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+                <div class="menu-links">
+
+                    <li> <a href="#about" onclick="toggleMenu()">À propos</a> </li>
+                    <li> <a href="#experience" onclick="toggleMenu()">Expérience</a> </li>
+                    <li> <a href="#projects" onclick="toggleMenu()">Projets</a> </li>
+                    <li> <a href="#contact" onclick="toggleMenu()">Contact</a> </li>
+                </div>
+
+            </div>
+
+        </nav>-->
+
+        <!-- Section de profil -->
+        <section id="profile">
+            <div class="section__pic__container">
+                <img src="./assets/profile-pic.png" alt="photo de Rayen" draggable="false">
+            </div>
+
+            <div class="section__text">
+                <p class="section__text__p1">Bonjour, je suis</p>
+                <h1 class="title">Rayen Ben Amor</h1>
+                <p class="section__text__p2">Développeur Junior</p>
+
+                <div class="btn-container">
+                    <button class="profile_btn" onclick="window.open('./assets/CV_Benamor_Rayen.pdf')">Voir CV</button>
+                    <!-- les deux boutons ont le même style -->
+                    <button class="profile_btn" onclick="location.href='./#contact'">mes Coordonnées</button>
+                </div>
+
+                <div id="socials-container">
+                    <img src="assets/linkedin.png" alt="mon profil LinkedIn" class="social_icon"
+                        onclick="window.open('https://www.linkedin.com/in/rayen-ben-amor-7775292a6/', '_blank')">
+
+                    <img src="assets/github.png" alt="mon profil GitHub" class="social_icon"
+                        onclick="window.open('https://github.com/rynBenAmor', '_blank')">
+                </div>
+            </div>
+        </section>
+
+        <!--section à propos-->
+        <section id="about">
+            
+            <p class="section__text__p1">plus d'informations :</p>
+
+            <h1 class="title">À propos de moi</h1>
+
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./assets/fac.jpg" class="about-pic" alt="Image de ma faculté" draggable="false" />
+                </div>
+
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <div class="icon-container">
+                                <img src="./assets/experience1.png" alt="icône d'expérience" class="icon">
+                            </div>
+                            <div class="education">
+                                <h3>Éducation :</h3>
+                                <p class="text-container">
+                                    Je m'appelle Rayen Ben Amor,<br /> et je suis actuellement en troisième année à
+                                    <strong>FST</strong> (Faculté des Sciences de Tunis El Manar). Je vais obtenir mon diplôme cette
+                                    année avec ma licence en <strong>TIC</strong> (Technologies de l'information et de la communication)
+                                    en tant que technicien supérieur. <br />Je suis enthousiaste à l'idée d'améliorer mes compétences. Je suis
+                                    optimiste quant à l'apprentissage et à l'exploration de nouvelles opportunités dans le domaine.
+                                </p>
+                                <!--<style>
+                                    .troll {
+                                        color: #f4eaef;
+                                        cursor: default;
+                                    }
+                                </style>
+                                <p class="troll">J'ai des yeux de couleur bonbon comme ma principale compétence (Vert)</p>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+       <!--SECTION EXPÉRIENCE-->
+        <section id="experience">
+
+            <p class="section__text__p1">plus d'information:</p>
+            <h1 class="title">Expériences et compétences acquises</h1>
+
+            <div class="experience-details-container">
+               
+                <div class="about-containers-2">
+                    <!--Conteneur frontend-->
+                    <div class="details-container-2">
+                        <h2 class="experience-sub-title">- Technologies frontend :</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/html.png" alt="icône d'expérience" class="icon" />
+                                <div>
+                                    <h3>HTML</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/css.png" alt="icône d'expérience" class="icon" />
+                                <div>
+                                    <h3>CSS</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/javascript.png" alt="icône d'expérience" class="icon" />
+                                <div>
+                                    <h3>Javascript</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/angular.png" alt="icône d'expérience" class="icon" />
+                                <div>
+                                    <h3>Angular</h3>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!--Conteneur backend-->
+                    <div class="details-container-2">
+                        <h2 class="experience-sub-title">- Technologies backend :</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/django.png" alt="icône d'expérience" class="icon" />
+                                <div>
+                                    <h3>Django</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/sql.png" alt="icône d'expérience" class="icon" />
+                                <div>
+                                    <h3>SQL</h3>
+                                </div>
+                                <p>(PostgreSQL/MySQL)</p>
+                            </article>
+                            <article>
+                                <img src="./assets/spring_boot.png" alt="icône d'expérience" class="icon" />
+                                <div>
+                                    <h3>Spring Boot</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/php.png" alt="icône d'expérience" class="icon" draggable="false" />
+                                <div>
+                                    <h3>PHP</h3>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!--SECTION PROJETS-->
+        <section id="projects">
+            <p class="section__text__p1">plus d'information:</p>
+            <h1 class="title">Projets récents</h1>
+            <div class="experience-details-container">
+                <div class="about-containers-2">
+                    <div class="details-container-2 color-container">
+                        <div class="article-container">
+                            <img src="./assets/moncef bay.png" alt="projet1" class="project1-img">
+                            <div>
+
+                                <h2 class="experience-sub-title">Moncef Bay</h2>
+                                <p> <strong>Description</strong><br/>Moncef Bay est une boutique en ligne e-commerce réalisée avec Django. Cette plateforme complète offre une expérience d'achat simple, garantit également la sécurité grâce aux systèmes d'authentification complets de Django, et propose également des fonctionnalités CRUD (Create, Read, Update, Delete). Entièrement construite avec Django, elle fonctionne donc comme une application rendue côté serveur (SSR), offrant des performances web dynamiques et efficaces pour les utilisateurs.</p>
+                                <div class="btn-container">
+                                    <button class="profile_btn" onclick="window.open('https://ryanbenamor.pythonanywhere.com/', '_blank')">Voir le site web</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                        <!--Deuxième projet-->
+                    <div class="details-container-2 color-container">
+                        <div class="article-container">
+                            
+                            <div>
+                                <img src="./assets/project2.png" alt="projet1" class="project2-img">
+                                <h2 class="experience-sub-title">Projet IoT</h2>
+                                <p> <strong>Description</strong><br/> Le projet de surveillance IoT en temps réel avec ESP8266 est une solution intelligente utilisant Arduino Uno et DHT pour mesurer la température et l'humidité. L'ESP8266 assure la connectivité à un serveur web via WebSocket, permettant la transmission en temps réel des données mesurées. Cette mise en œuvre met en avant des compétences avancées en programmation de systèmes embarqués, en configuration de serveur web avec ESP8266WebServer et en communication efficace via WebSocket. À l'aide d'une page HTML, les données sont visualisées et analysées, fournissant une solution complète et innovante de surveillance IoT.</p>
+                                
+                                <div class="btn-container">
+                                    
+                                    <img src="assets/github.png" alt="mon profil GitHub" class="social_icon"
+                                    onclick="window.open('https://github.com/rynBenAmor/capture', '_blank')">
+                                    
+                                </div>
+                                
+                            </div>             
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            
+        </section>
+
+        <!--SECTION CONTACT-->
+        <section id="contact">
+            <p class="section__text__p1">plus d'information:</p>
+            <h1 class="title">Contactez-moi !</h1>
+
+            <div class="contact-info-upper-container">
+
+                <div class="contact-info-container">
+                    <img src="./assets/email.png" alt="icône e-mail" class="icon contact-icon" draggable="false">
+                    <H2 class="mail"><a href="mailto:ray3n.b3n.amor@gmail.com">ray3n.b3n.amor@gmail.com</a></H2>
+                    
+                </div>
+                <p class="goodbye">Hâte de vous rencontrer !</p>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+        
+    </div>
+
+
+    
     <script src="script.js"></script>
+
 </body>
+
+
 
 </html>
